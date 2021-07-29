@@ -1,0 +1,148 @@
+
+    .nav-bar{
+        background-color: rgba(255, 255, 255, 0);
+        padding: 20px;
+        display: block;
+        color:white;
+        cursor: pointer;
+        font-size: 1.5em;
+        width: 100%;
+    }
+
+    .menu, .submenu{
+        list-style: none;
+        padding: 0%;
+        margin: 0%;
+    }
+
+    .menu__item{
+        padding-right: 8%;
+        padding-left: 8%;
+    }
+
+    .menu__link i{
+        display: inline;
+        padding-left: 0.5%;
+    }
+
+    .menu{
+        background-color:white;
+        width: 100%;
+        margin-left: -110%;
+        transition: all 0.5s;
+        margin-bottom: 4%
+    }
+
+    .menu{
+        height: 0;
+    }
+
+    .menu__link{
+        display: block;
+        padding: 25px;
+        color: rgb(65, 65, 65);
+        font-size: 1.4em;
+        text-decoration: none;
+        font-family: 'Times New Roman', Times, serif;
+        text-align: center;
+        height: 100%;
+        font-size: xx-large;
+    }
+
+    .icon-space{
+        padding-left: 5px;
+        padding-right: 7px;
+        padding-top: 0%;
+        padding-bottom: 0%;
+    }
+
+    .submenu{
+        height: 0;
+        overflow: hidden;
+        
+        width: 100%;
+
+    }
+
+
+    .submenu .menu__link{
+        
+        margin-right: 10%;
+        color: black;
+    }
+
+    .menu__link:hover{
+        background-color: rgba(57, 65, 68, 0.61);
+        color: white;
+    }
+
+    .mostrar{
+        margin-left: 0%;
+    }
+
+    .mostrar2{
+        visibility: visible;
+        height: 100%;
+        transition: all 0.1ms;
+    }
+
+    @media only screen and (min-width: 800px){
+        .nav-bar{
+            display: none;
+        }
+
+        .menu{
+            margin-left: 0;
+            display: flex;
+            height: 100%;
+        }
+
+        .container-submenu{
+            position: relative;
+        }
+
+        .submenu{
+            position: absolute;
+            top: 82px;
+            width: 30vw;
+            overflow: visible;
+            padding-left: 5px;
+            padding-right: 5px;
+            margin-top: 16px;
+            padding: 0%;
+            z-index: 1000;
+            opacity: 0;
+            visibility: hidden;
+            background-color: rgba(57, 65, 68, 0.61);
+            margin-left: -11px;
+        }
+
+        .container-submenu:hover .submenu{
+            opacity: 1;
+            visibility: visible;
+            transition: all 0.2s;
+        }
+
+        .submenu .menu__link{
+            background-color: rgba(57, 65, 68, 0.61);
+        }
+
+        .submenu .menu__link:hover{
+            color: rgba(44, 51, 53, 0.63);
+            background-color: white;
+            transition: all 0.2s;
+        }
+    }
+
+    .espacio{
+        height: 100%;
+    }
+
+    .ocultar{
+        visibility: hidden;
+        height: 0;
+    }
+
+    
+
+    
